@@ -1,0 +1,8 @@
+<%= simple_form_for [@plant] do |f| %>
+  <%= f.input :name %>
+  <%= f.input :photos, as: :file, input_html: { multiple: 'multiple' } %>
+  <%= f.input :description %>
+  <%= f.input :category, :collection => %w[ Bathroom Living-Room Outdoor Indoor ] %>
+  <%= f.input :price %>
+  <%= f.submit "Add Plant" %>
+<% end %>
