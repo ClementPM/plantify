@@ -1,0 +1,39 @@
+<div class="index-banner d-flex align-items-center" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1586263048715-d2460938153c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');">
+  <div class="container">
+    <div class="banner-text d-flex">
+      <h1> <%= @plants.count %> plants for your search</h1>
+    </div>
+</div>
+</div>
+
+<div class="container">
+
+  <div class="row">
+    <% @plants.each do |plant| %>
+    <div class="col-12 col-md-6 col-lg-4 mt-5">
+      <div class="card" style="height: 28rem; width: 22rem;">
+
+        <div class="plant-card-image" style="background-image: url('<%= cl_image_path plant.photos.first.key, crop: :fill %>')"></div>
+
+          <div class="card-body d-flex flex-column justify-content-between">
+
+            <div>
+              <h5 class="card-title">
+              <%= plant.name %>
+              </h5>
+<!--               <p class="card-text mb-5"> <%= plant.description %></p>
+ -->            </div>
+
+            <div class="d-flex flex-column flex-end mt-auto">
+              <p class="card-text">Category: <%= plant.category %></p>
+              <p class="card-text"><strong>EUR</strong> <%= plant.price %></p>
+            </div>
+
+            <%= link_to "Adopt me", plant_path(plant), class: "btn btn-primary mt-3" %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+</div>
