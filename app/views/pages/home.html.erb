@@ -17,6 +17,14 @@
   </div>
 </div>
 
+                <%#-------- Search Button --------%>
+<%= form_tag(plants_path, method: :get, class: 'form-inline') do %>
+    <div class="form-group">
+      <%= text_field_tag :query, "", placeholder: "looking for...", class: 'form-control' %>
+    </div>
+    <%= submit_tag "Search", class: 'btn btn-info' %>
+  <% end %>
+
                 <%#-------- Table header --------%>
 <div class="container-master">
   <div class="container-description">
@@ -48,15 +56,8 @@
         </div>
       </div>
     </div>
-<%#-------- Search Button --------%>
-<%= form_tag(plants_path, method: :get, class: 'form-inline') do %>
-    <div class="form-group">
-      <%= text_field_tag :query, "", placeholder: "looking for...", class: 'form-control' %>
-    </div>
-    <%= submit_tag "Search", class: 'btn btn-info' %>
-  <% end %>
 
-<%#-------- Table header --------%>
+                <%#-------- Table header --------%>
 <div class="container-description">
   <div class="txt-container-description">
     Enjoy your homed filled with beautiful potted plant
