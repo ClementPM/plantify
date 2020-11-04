@@ -57,12 +57,6 @@
       </div>
     </div>
 
-                <%#-------- Table header --------%>
-<div class="container-description">
-  <div class="txt-container-description">
-    Enjoy your homed filled with beautiful potted plant
-  </div>
-
   <div class="container-slogan text-center">
       <h3>You are in good company</h3>
   </div>
@@ -72,33 +66,38 @@
   </div>
 
                 <%#-------- cards --------%>
-  <div class="container-pictures d-flex justify-content-center">
-    <div class="row">
-      <div class="col">
-        <h2>Pic1</h2>
-      </div>
-      <div class="col">
-        <h2>Pic2</h2>
-      </div>
-      <div class="col">
-        <h2>Pic3</h2>
-      </div>
-      <div class="col">
-        <h2>Pic4</h2>
-      </div>
+  <div class="d-flex justify-content-between">
+    <div class="image-vert" style="background-image: url(<%= image_path 'splash-img.jpeg'%> )">
+    </div>
+    <div class="image-vert" style="background-image: url(<%= image_path 'splash-img.jpeg'%> )">
+    </div>
+    <div class="image-vert" style="background-image: url(<%= image_path 'splash-img.jpeg'%> )">
+    </div>
+    <div class="image-vert" style="background-image: url(<%= image_path 'splash-img.jpeg'%> )">
     </div>
   </div>
 
                 <%#-------- Footer --------%>
   <div class="container text-center">
-    <div class="row">
-      <div class="col">
-        <h3>company logo</h3>
-      </div>
+    <div class="spacer d-flex justify-content-center">
+      <%= image_tag 'plantify.png', class: 'image-logo'%> 
     </div>
-    <div class="row">
-      <div class="col">
-        <h3>socialmedia icons</h3>
+
+    <div class="row justify-content-center">
+      <div class="col-4">
+        <div class="icons d-flex justify-content-between">
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-tiktok"></i>
+        </div>
+      </div>
+      <div class="container d-flex justify-content-center">
+        <div class="row">
+          <div class="last-sentence">
+            <p>Plantify, Inc. 2020. We love providing plants to our user!</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
