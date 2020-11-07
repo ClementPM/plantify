@@ -4,11 +4,21 @@ class PlantsController < ApplicationController
       @plants = Plant.where("name ILIKE ?", "%#{params[:query]}%")
     else
       @plants = Plant.all
+      @plants.each do |plant|
+        @markers = [{
+          lat: plant.latitude,
+          lng: plant.longitude
+        }]
+      end
     end
   end
 
   def show
     @plant = Plant.find(params[:id])
+    @markers = [{
+      lat: @plant.latitude,
+      lng: @plant.longitude
+    }]
   end
 
   def new
@@ -28,6 +38,6 @@ class PlantsController < ApplicationController
   private
 
   def plant_params
-    params.require(:plant).permit(:name, :description, :category, :price, photos: [])
+    params.require(:plant).permit(:name, :description, :category, :price, :address, photos: [])
   end
 end

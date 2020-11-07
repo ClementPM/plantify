@@ -1,4 +1,4 @@
-<div class="container mt-5">
+div class="container mt-5">
   <h1 class="mb-5 text-center">
     Add a new Plantify family member 🌱
   </h1>
@@ -7,6 +7,7 @@
       <%= f.input :name %>
       <%= f.input :photos, as: :file, input_html: { multiple: 'multiple' } %>
       <%= f.input :description %>
+      <%= f.input :address %>
       <%= f.input :category, :collection => %w[ Bathroom Living-Room Outdoor Indoor ] %>
       <%= f.input :price %>
       <%= f.submit "Add Plant" %>

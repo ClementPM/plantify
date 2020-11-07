@@ -23,7 +23,8 @@ name: 'Charlie',
 description: 'Charlie is a real cutie. It does not require a lot of attention',
 price: 75,
 category:'indoor',
-user: user1
+user: user1,
+address: '22 Elisenda de Montcada, Barcelona'
 )
 plant1.photos.attach(io: photo1, filename: 'charlie.jpeg', content_type: 'image/jpeg')
 
@@ -33,7 +34,8 @@ name: 'Ben',
 description: 'Ben has succulent rosette-form leaves in shades of green, purple, and red',
 price: 50,
 category:'indoor',
-user: user1
+user: user1,
+address: '22 Elisenda de Montcada, Barcelona'
 )
 plant2.photos.attach(io: photo2, filename: 'ben.jpeg', content_type: 'image/jpeg')
 
@@ -43,7 +45,8 @@ name: 'Kitty',
 description: 'Growing Kitty is not only rewarding but extremely tasty. Yummy!',
 price: 90,
 category:'outdoor',
-user: user1
+user: user1,
+address: '22 Elisenda de Montcada, Barcelona'
 )
 plant3.photos.attach(io: photo3, filename: 'kitty.jpeg', content_type: 'image/jpeg')
 
@@ -53,7 +56,8 @@ name: 'Rosie',
 description: 'drinking cactus Rosie’s water has saved the lives of people traveling through the desert',
 price: 45,
 category:'outdoor',
-user: user1
+user: user1,
+address: '22 Elisenda de Montcada, Barcelona'
 )
 plant4.photos.attach(io: photo4, filename: 'rosie.jpeg', content_type: 'image/jpeg')
 
