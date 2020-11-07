@@ -8,8 +8,12 @@
       <h1>Bring change and green up your life</h1>
     </div>
     <div class="subtitle d-flex justify-content-center">
-        <div class="button button-green mr-3">Explore</div>
-        <div class="button button-ghost">Add new plant</div>
+        <div class="button button-green mr-3">
+          <%= link_to "Explore", plants_path %>
+        </div>
+        <div class="button button-ghost">
+          <%= link_to "Add new plant", new_plant_path %>
+        </div>
     </div>
   </div>
 </div>
@@ -62,14 +66,10 @@
 
                 <%#-------- cards --------%>
   <div class="d-flex justify-content-between">
-    <div class="image-vert" style="background-image: url(<%= image_path 'splash-img.jpeg'%> )">
-    </div>
-    <div class="image-vert" style="background-image: url(<%= image_path 'splash-img.jpeg'%> )">
-    </div>
-    <div class="image-vert" style="background-image: url(<%= image_path 'splash-img.jpeg'%> )">
-    </div>
-    <div class="image-vert" style="background-image: url(<%= image_path 'splash-img.jpeg'%> )">
-    </div>
+    <% @plants.each do |plant| %>
+      <div class="image-vert" style="background-image: url('<%= cl_image_path plant.photos.first.key, crop: :fill %>' )">
+      </div>
+    <% end %>
   </div>
 
   <%= render 'shared/footer' %>
