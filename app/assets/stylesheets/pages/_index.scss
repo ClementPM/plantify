@@ -1,2 +1,18 @@
 // Import page-specific CSS files here.
 @import "home";
+
+.page-container {
+  display: flex;
+  margin: 0 50px;
+}
+
+.cards-grid {
+  flex-grow: 1;
+  margin-right: 50px;
+}
+
+#map {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
