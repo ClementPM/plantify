@@ -1,24 +1,32 @@
 .home-banner {
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 80vh;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
 }
 
 .title {
   text-align: center;
-  padding-top: 30rem;
 }
 
 .container-txt {
   margin: 3rem 0rem 3rem 0rem;
-  color: red;
 }
+.searchbar {
+  display: flex;
+  justify-content: center;
 
+}
 // .table-container {
 // }
 
 .container-slogan {
-  color: blue;
   margin: 3rem;
 }
 
