@@ -51,9 +51,9 @@
     </div>
   </div>
 
-  <div id="map-index"
+  <div id="map"
       class="mt-5"
-      style="width: 40%; height: 100vh;"
+      style="width: 40%; height: 100vh; position: sticky; top: 0;"
       data-markers="<%= @markers.to_json %>"
       data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
   </div>
