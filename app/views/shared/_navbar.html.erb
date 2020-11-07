@@ -2,7 +2,7 @@
   <%= link_to root_path, class: "navbar-brand" do %>
     <div class="logoname d-flex">
       <%= image_tag "plantify.png" %>
-      <h4>PLANTIFY</h4>  
+      <h4>PLANTIFY</h4>
     </div>
     <% end %>
 
@@ -25,11 +25,11 @@
       <% else %>
 
         <li>
-          <%= link_to "Login", "#", class: "button button-ghost mr-3" %>
+          <%= link_to "Login", new_user_session_path, class: "button button-ghost mr-3" %>
         </li>
         <li>
-          <%= link_to "Register", "#", class: "button button-green mr-3" %>
-          
+          <%= link_to "Register", new_user_registration_path, class: "button button-green mr-3" %>
+
         </li>
       <% end %>
     </ul>
