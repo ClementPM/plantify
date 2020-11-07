@@ -4,17 +4,21 @@ class PlantsController < ApplicationController
       @plants = Plant.where("name ILIKE ?", "%#{params[:query]}%")
     else
       @plants = Plant.all
-      @markers = @plants.geocoded.map do |plant|
-        {
+      @plants.each do |plant|
+        @markers = [{
           lat: plant.latitude,
           lng: plant.longitude
-        }
+        }]
       end
     end
   end
 
   def show
     @plant = Plant.find(params[:id])
+    @markers = [{
+      lat: @plant.latitude,
+      lng: @plant.longitude
+    }]
   end
 
   def new
