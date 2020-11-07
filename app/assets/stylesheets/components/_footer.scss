@@ -1,0 +1,40 @@
+.icons {
+  height: 100px;
+  font-size: 2rem;
+  padding-top: 25px;
+  .fab {
+    padding: 0, 1rem, 0, 0;
+  }
+}
+
+.company-logo {
+  border-bottom: 1px solid gray;
+  margin-top: 3rem;
+}
+
+.last-sentence {
+  margin-bottom: 4rem;
+}
+
+.container-pictures {
+  height: 30px;
+}
+
+.image-vert {
+  height: 300px;
+  width: 20%;
+  background-size: cover;
+}
+.image-logo {
+  height: 60px;
+  background-size: cover;
+}
+
+.spacer {
+  margin-top: 10vh;
+  margin-bottom: 3vh;
+}
+
+#first {
+  border: 1px solid;
+}
