@@ -22,6 +22,9 @@ require("channels")
 // WRITE YOUR OWN JS STARTING FROM HERE 👇
 // ----------------------------------------------------
 
+// CSS
+import 'mapbox-gl/dist/mapbox-gl.css';
+
 // External imports
 import "bootstrap";
 import { initMapbox } from '../plugins/init_mapbox';
