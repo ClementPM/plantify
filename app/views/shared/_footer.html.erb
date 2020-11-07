@@ -1,8 +1,12 @@
-  
-  <div class="container text-center">
+
+  <div class="container-master text-center">
     <div class="spacer d-flex justify-content-center">
-      <%= image_tag 'plantify.png', class: 'image-logo'%> 
+      <%= link_to root_path do %>
+        <%= image_tag 'plantify.png', class: 'image-logo'%>
+      <% end %>
     </div>
+
+  <hr>
 
     <div class="row justify-content-center">
       <div class="col-4">
@@ -11,7 +15,7 @@
         <%= link_to "https://www.facebook.com" do %>
         <i class="fab fa-facebook-square"></i>
         <% end %>
-      
+
         <%= link_to "https://www.twitter.com" do %>
         <i class="fab fa-twitter-square"></i>
         <% end %>
