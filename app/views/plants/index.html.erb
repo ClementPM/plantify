@@ -5,6 +5,15 @@
     </div>
 </div>
 </div>
+<br>
+<div class="search-btn d-flex justify-content-center">
+  <%= form_tag(plants_path, method: :get, class: 'form-inline') do %>
+    <div class="form-group">
+      <%= text_field_tag :query, "", placeholder: "Find your plant", class: 'form-control mr-1' %>
+    </div>
+    <%= submit_tag "Search", class: 'btn btn-secondary' %>
+  <% end %>
+</div>
 
 <div class="container">
 
