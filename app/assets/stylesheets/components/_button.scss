@@ -1,12 +1,12 @@
-.btn {
+.button {
   border-radius: 5px;
-  border-style: none;
+  //border-style: none;
   text-align: center;
   padding: 10px 30px;
-  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.btn-primary {
+.button-green {
   color: white;
   background-color: #0A8F63;
   &:hover {
@@ -14,7 +14,7 @@
   }
 }
 
-.btn-secondary {
+.button-ghost {
   color: #0A8F63;
   border: 1px solid #0A8F63;
   background-color: white;

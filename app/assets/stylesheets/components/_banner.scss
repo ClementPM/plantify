@@ -7,3 +7,18 @@
   margin: 0 !important;
   color: white;
 }
+
+.home-banner {
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  text-align: center;
+  padding-bottom: 85px;
+}
