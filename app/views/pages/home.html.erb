@@ -1,15 +1,15 @@
 
 <%#-------- image --------%>
-<div class="home-banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1495195129352-aeb325a55b65?ixlib=rb-1.2.1&auto=format&fit=crop&w=1955&q=80);">
+<div class="home-banner" style="background-image: url(https://images.unsplash.com/photo-1466781783364-36c955e42a7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80);">
 
                 <%#-------- header --------%>
-  <div class="headline pb-5">
-    <div class="title">
+  <div class="headline">
+    <div class="mb-3">
       <h1>Bring change and green up your life</h1>
     </div>
     <div class="subtitle d-flex justify-content-center">
-        <div class="explore btn btn-primary">Explore</div>
-        <div class="add-new btn btn-primary">Add new plant</div>
+        <div class="button button-green mr-3">Explore</div>
+        <div class="button button-ghost">Add new plant</div>
     </div>
   </div>
 </div>
@@ -21,30 +21,30 @@
 
   <div class="container-description">
     <div class="container-txt">
-      <h1 class="font-weight-bold text-uppercase">Enjoy your homed filled with <br>beautiful potted plant</h1>
+      <h2>Enjoy your homed filled with <br>beautiful potted plant</h2>
     </div>
 
                 <%#-------- Table --------%>
     <div class="container-table">
       <div class="row">
         <div class="col mt-3 mb-3 pr-4">
-          <h2 class="font-weight-bold">Lorem ipsum dolor sit amet</h2>
-          <h4>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+          <h4>Lorem ipsum dolor sit amet</h4>
+          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
         <div class="col mt-3 mb-3 pr-4">
-          <h2 class="font-weight-bold">Lorem ipsum dolor sit amet</h2>
-          <h4>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+          <h4>Lorem ipsum dolor sit amet</h4>
+          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
       </div>
       <br>
       <div class="row">
         <div class="col mt-3 mb-3 pr-4">
-          <h2 class="font-weight-bold">Lorem ipsum dolor sit amet</h2>
-          <h4>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+          <h4>Lorem ipsum dolor sit amet</h4>
+          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
         <div class="col mt-3 mb-3 pr-4">
-          <h2 class="font-weight-bold">Lorem ipsum dolor sit amet</h2>
-          <h4>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+          <h4>Lorem ipsum dolor sit amet</h4>
+          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
       </div>
     </div>
@@ -53,11 +53,11 @@
 <div class="container-description">
   
   <div class="container-slogan text-center">
-      <h3>You are in good company</h3>
+      <h2>You are in good company</h2>
   </div>
 
   <div class="description text-center">
-      <h3>Plantify is a renting plant service Velit aliquet sagittis id consectetur purus ut faucibus. Lorem ipsum dolor sit amet consectetur adipiscing elit. Suspendisse sed nisi lacus sed viverra tellus. Posuere urna nec tincidunt praesent semper. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et. Et ligula ullamcorper malesuada proin. A cras semper auctor neque vitae. Nibh sit amet commodo nulla facilisi nullam</h3>
+      <h3>Plantify is a renting plant service Velit aliquet sagittis id consectetur purus ut faucibus. Lorem ipsum dolor sit amet consectetur adipiscing elit. Suspendisse sed nisi lacus sed viverra tellus. </h3>
   </div>
 
                 <%#-------- cards --------%>
@@ -72,28 +72,6 @@
     </div>
   </div>
 
-                <%#-------- Footer --------%>
-  <div class="container text-center">
-    <div class="spacer d-flex justify-content-center">
-      <%= image_tag 'plantify.png', class: 'image-logo'%> 
-    </div>
+  <%= render 'shared/footer' %>
 
-    <div class="row justify-content-center">
-      <div class="col-4">
-        <div class="icons d-flex justify-content-between">
-        <i class="fab fa-facebook-square"></i>
-        <i class="fab fa-twitter-square"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-tiktok"></i>
-        </div>
-      </div>
-      <div class="container d-flex justify-content-center">
-        <div class="row">
-          <div class="last-sentence">
-            <p>Plantify, Inc. 2020. We love providing plants to our user!</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>

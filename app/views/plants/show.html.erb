@@ -104,13 +104,4 @@
 </div>
 
 <hr>
-<div class="text-center">
-  footer | <%= link_to "all plants", plants_path %>
-</div>
-
-<!--   <div class="plant-card-image-show mb-5" style="background-image: url('<%= cl_image_path @plant.photos.first.key, crop: :fill %>')"></div>
- -->
-
-<!--   <% @plant.photos.each do |photo| %>
-    <%= cl_image_tag photo.key, height: 500, width: 400, crop: :fill unless photo.blank? %>
-  <% end %> -->
+<%= render 'shared/footer' %>
