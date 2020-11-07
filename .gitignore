@@ -42,3 +42,8 @@ yarn-debug.log*
 .DS_Store
 .env*
 .env*
+
+#Intellij Idea
+.idea/*
+.idea
+
