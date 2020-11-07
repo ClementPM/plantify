@@ -53,16 +53,23 @@
         <p class="mb-5 mr-5"><%= @plant.description %>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quam nam et perspiciatis dolorem nobis illo facere qui mollitia est voluptatem aut iste in ab ipsa soluta. Earum, dolorem, doloribus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere eos mollitia sapiente perspiciatis totam, iste, quae voluptates. Tenetur incidunt fuga eum iure, nemo suscipit, excepturi cupiditate officia omnis dolorum dolorem.</p>
 
-        <div class="d-flex align-items-end">
-          <h3 class="mr-4"><i class="fab fa-pagelines"></i></h3>
-          <p class="ml-2 d-flex align-items-end"><%= @plant.category %></p>
+        <div class="d-flex align-items-center mb-4">
+          <div class="mr-4">
+            <%= image_tag("https://www.flaticon.com/svg/static/icons/svg/1460/1460537.svg", size: "30") %>
+          </div>
+          <div class="mb-0 ml-2">
+            <p class="mb-0"><%= @plant.category %></p>
+          </div>
         </div>
 
-        <div class="d-flex">
-          <h3 class="mr-4"><i class="fas fa-euro-sign"></i></h3>
-          <p class="ml-2 d-flex align-items-end"><%= @plant.price %></p>
+        <div class="d-flex align-items-center">
+          <div class="mr-4">
+            <%= image_tag("https://www.flaticon.com/svg/static/icons/svg/846/846066.svg", size: "30") %>
+          </div>
+          <div class="ml-2">
+            <p class="mb-0"><%= @plant.price %> EUR</p>
+          </div>
         </div>
-
 
       </div>
 
