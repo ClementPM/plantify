@@ -12,10 +12,39 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+@import "config/fonts";
 
 a {
   text-decoration: none;
   color: inherit;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 56px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  font-size: 42px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+  font-size: 31px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  opacity: 0.8;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
 }
 
 // for the splash image to work DO NOT DELETE
