@@ -3,10 +3,10 @@
     <div class="banner-text d-flex">
       <h1> <%= @plants.count %> plants for your search</h1>
     </div>
+  </div>
 </div>
-</div>
-<br>
-<div class="search-btn d-flex justify-content-center">
+
+<div class="search-btn d-flex justify-content-center mt-5">
   <%= form_tag(plants_path, method: :get, class: 'form-inline') do %>
     <div class="form-group">
       <%= text_field_tag :query, "", placeholder: "Find your plant", class: 'form-control mr-1' %>
@@ -30,8 +30,8 @@
               <h5 class="card-title">
               <%= plant.name %>
               </h5>
-<!--               <p class="card-text mb-5"> <%= plant.description %></p>
- -->            </div>
+                <!--               <p class="card-text mb-5"> <%= plant.description %></p>-->            
+            </div>
 
             <div class="d-flex flex-column flex-end mt-auto">
               <p class="card-text">Category: <%= plant.category %></p>
@@ -44,6 +44,5 @@
       </div>
     <% end %>
   </div>
-
   <%= render 'shared/footer' %>
 </div>
