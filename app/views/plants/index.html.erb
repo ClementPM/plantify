@@ -11,11 +11,16 @@
     <div class="form-group">
       <%= text_field_tag :query, "", placeholder: "Find your plant", class: 'form-control mr-1' %>
     </div>
-    <%= submit_tag "Search", class: 'btn btn-secondary' %>
+    <%= submit_tag "Search", class: 'btn button-ghost' %>
   <% end %>
 </div>
 
 <div class="page-container">
+    <% if @plants.empty? %>
+      <div class="my-3">
+        There are not plants for your search yet.
+      </div>
+    <% end %>
   <div class="cards-grid">
     <div class="row">
       <% @plants.each do |plant| %>
@@ -37,7 +42,8 @@
                 <p class="card-text"><strong>EUR</strong> <%= plant.price %></p>
               </div>
 
-              <%= link_to "Adopt me", plant_path(plant), class: "btn btn-primary mt-3" %>
+              <%= link_to "Adopt me", plant_path(plant), class: "button button-green mt-3" %>
+
             </div>
           </div>
         </div>
@@ -53,3 +59,4 @@
   </div>
 </div>
   <%= render 'shared/footer' %>
+
