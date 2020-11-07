@@ -4,6 +4,12 @@ class PlantsController < ApplicationController
       @plants = Plant.where("name ILIKE ?", "%#{params[:query]}%")
     else
       @plants = Plant.all
+      @markers = @plants.geocoded.map do |plant|
+        {
+          lat: plant.latitude,
+          lng: plant.longitude
+        }
+      end
     end
   end
 
@@ -28,6 +34,6 @@ class PlantsController < ApplicationController
   private
 
   def plant_params
-    params.require(:plant).permit(:name, :description, :category, :price, photos: [])
+    params.require(:plant).permit(:name, :description, :category, :price, :address, photos: [])
   end
 end

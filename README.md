@@ -23,3 +23,6 @@ git checkout -b "nameofthebranch"
 
 # Syntax for adding foreign keys directly via CLI: rails g model Booking modelTableName:references
 
+# Added Geocoder GemFile
+
+
