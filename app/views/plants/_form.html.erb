@@ -1,17 +1,23 @@
-<div class="container mt-5">
-  <h1 class="mb-5 text-center">
-    Add a new Plantify family member 🌱
-  </h1>
-  <div class="new-form">
-    <%= simple_form_for [@plant] do |f| %>
-      <%= f.input :name %>
-      <%= f.input :photos, as: :file, input_html: { multiple: 'multiple' } %>
-      <%= f.input :description %>
-      <%= f.input :address %>
-      <%= f.input :category, :collection => %w[ Bathroom Living-Room Outdoor Indoor ] %>
-      <%= f.input :price %>
-      <%= f.submit "Add Plant" %>
-    <% end %>
-  </div>
+<div class="new-form">
+  <div class="container mt-5">
+    <h1 class="mb-5 text-center">
+      Add a new Plantify family member 🌱
+    </h1>
+    <p class="mt-4 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="new-form" id="surrounding">
+      <%= simple_form_for [@plant] do |f| %>
+        <%= f.input :name %>
+        <%= f.input :photos, as: :file, input_html: { multiple: 'multiple' } %>
+        <%= f.input :description %>
+        <%= f.input :address %>
+        <%= f.input :category, :collection => %w[ Bathroom Living-Room Outdoor Indoor ] %>
+        <%= f.input :price %>
+        
+        <%=f.submit "Add Plant", class: "button button-green" %>
 
+      <% end %>
+    </div>
+  </div>
 </div>
+
+<%= render 'shared/footer' %>
