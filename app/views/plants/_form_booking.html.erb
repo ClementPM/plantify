@@ -1,0 +1,7 @@
+<div class="new-form">
+  <%= simple_form_for [@plant, @booking] do |f| %>
+    <%= f.input :start_date, as: :date, label: "Move in", html5: true %>
+    <%= f.input :end_date, as: :date, label: "Move out", html5: true %>
+    <%= f.submit "Adopt me" %>
+  <% end %>
+</div>

@@ -15,6 +15,7 @@ class PlantsController < ApplicationController
 
   def show
     @plant = Plant.find(params[:id])
+    @booking = Booking.new
     @markers = [{
       lat: @plant.latitude,
       lng: @plant.longitude
