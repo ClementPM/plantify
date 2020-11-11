@@ -6,4 +6,5 @@ class Plant < ApplicationRecord
   has_many :bookings
   has_many_attached :photos
   after_validation :geocode, if: :will_save_change_to_address?
+  CATEGORIES = %w[ Bathroom Living-Room Outdoor Indoor ]
 end
