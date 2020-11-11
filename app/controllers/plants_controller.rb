@@ -6,11 +6,11 @@ class PlantsController < ApplicationController
 
     @plants = @plants.where(category: params[:category].downcase) if params[:category]
 
-    @plants.each do |plant|
-      @markers = [{
+    @markers =  @plants.map do |plant|
+      {
         lat: plant.latitude,
         lng: plant.longitude
-      }]
+      }
     end
   end
 
