@@ -1,15 +1,16 @@
 class PlantsController < ApplicationController
   def index
-    if params[:query]
-      @plants = Plant.where("name ILIKE ?", "%#{params[:query]}%")
-    else
-      @plants = Plant.all
-      @plants.each do |plant|
-        @markers = [{
-          lat: plant.latitude,
-          lng: plant.longitude
-        }]
-      end
+    @plants = Plant.all
+
+    @plants = @plants.where("name ILIKE ?", "%#{params[:query]}%") if params[:query]
+
+    @plants = @plants.where(category: params[:category].downcase) if params[:category]
+
+    @plants.each do |plant|
+      @markers = [{
+        lat: plant.latitude,
+        lng: plant.longitude
+      }]
     end
   end
 

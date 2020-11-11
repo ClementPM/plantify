@@ -10,9 +10,9 @@
         <%= f.input :photos, as: :file, input_html: { multiple: 'multiple' } %>
         <%= f.input :description %>
         <%= f.input :address %>
-        <%= f.input :category, :collection => %w[ Bathroom Living-Room Outdoor Indoor ] %>
+        <%= f.input :category, :collection => Plant::CATEGORIES %>
         <%= f.input :price %>
-        
+
         <%=f.submit "Add Plant", class: "button button-green" %>
 
       <% end %>
