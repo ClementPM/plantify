@@ -24,7 +24,7 @@ description: 'Charlie is a real cutie. It does not require a lot of attention',
 price: 75,
 category:'indoor',
 user: user1,
-address: '22 Elisenda de Montcada, Barcelona'
+address: 'Tokyo'
 )
 plant1.photos.attach(io: photo1, filename: 'charlie.jpeg', content_type: 'image/jpeg')
 
@@ -35,7 +35,7 @@ description: 'Ben has succulent rosette-form leaves in shades of green, purple, 
 price: 50,
 category:'indoor',
 user: user1,
-address: '22 Elisenda de Montcada, Barcelona'
+address: 'Barcelona'
 )
 plant2.photos.attach(io: photo2, filename: 'ben.jpeg', content_type: 'image/jpeg')
 
@@ -46,7 +46,7 @@ description: 'Growing Kitty is not only rewarding but extremely tasty. Yummy!',
 price: 90,
 category:'outdoor',
 user: user1,
-address: '22 Elisenda de Montcada, Barcelona'
+address: 'Amsterdam'
 )
 plant3.photos.attach(io: photo3, filename: 'kitty.jpeg', content_type: 'image/jpeg')
 
@@ -57,7 +57,7 @@ description: 'drinking cactus Rosie’s water has saved the lives of people trav
 price: 45,
 category:'outdoor',
 user: user1,
-address: '22 Elisenda de Montcada, Barcelona'
+address: 'Lisbon'
 )
 plant4.photos.attach(io: photo4, filename: 'rosie.jpeg', content_type: 'image/jpeg')
 
