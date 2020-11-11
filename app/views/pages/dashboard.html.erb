@@ -41,14 +41,47 @@
     <% end %>
     </div>
 
+            <!--REQUESTS -->
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+      <% current_user.requested_bookings.each do |booking| %>
+              <div class="card-product mb-4 mt-4"> 
+                
+          <%= cl_image_tag booking.plant.photos.first.key, crop: :fill, class: "booking-img" %>
+
+          <div class="card-product-infos">
+            <h2><%= booking.plant.name %></h2>
+            <p>Move in: <%= booking.start_date %> </p>
+            <p>Move out: <%= booking.end_date %> </p>
+          </div>
+
+          <div class="btn-right button button-green ml-auto mr-5">
+          <%= booking.status.capitalize %>
+          </div>
+        </div>
+      <% end %>
+    </div>
 
 
 
-    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
 
+            <!--PLANTS -->
+    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+      <% @plants.each do |plant| %>
+        <div class="card-product mb-4 mt-4"> 
+          
+          <%= cl_image_tag plant.photos.first.key, crop: :fill, class: "booking-img" %>
 
+          <div class="card-product-infos">
+            <h2> <%= plant.name %> </h2>
+            <p> <%= plant.description %> </p>
+          </div>
 
-    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+          <div class="btn-right button button-green ml-auto mr-5">
+          <%= link_to 'More info', plant_path(plant) %>
+          </div>
+        </div>
+      <% end %>
+    </div>
   </div>
 </div>
 
