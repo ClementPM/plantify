@@ -14,7 +14,19 @@
     <%= submit_tag "Search", class: 'btn button-ghost' %>
   <% end %>
 </div>
-
+<div class="category-choices">
+  <% Plant::CATEGORIES.each do |c| %>
+    <% if c == params[:category] %>
+      <a href="/plants?<%= "&query=#{params[:query]}" if params[:query] %>">
+        <div class="category-choice selected"> <%= c %></div>
+      </a>
+    <% else %>
+      <a href="/plants?category=<%= c %><%= "&query=#{params[:query]}" if params[:query] %>">
+        <div class="category-choice"> <%= c %></div>
+      </a>
+    <% end %>
+  <% end %>
+</div>
 <div class="page-container">
     <% if @plants.empty? %>
       <div class="my-3">

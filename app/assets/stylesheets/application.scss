@@ -18,9 +18,10 @@ a {
   text-decoration: none;
   color: inherit;
   font-family: 'Montserrat', sans-serif;
+
   &:hover {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
   }
 }
 
@@ -49,6 +50,10 @@ h4 {
   font-size: 24px;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
+}
+
+.hidden {
+  display: none;
 }
 
 // for the splash image to work DO NOT DELETE
