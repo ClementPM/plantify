@@ -36,7 +36,7 @@
   <div class="cards-grid">
     <div class="row">
       <% @plants.each do |plant| %>
-      <div class="col-12 col-md-6 col-lg-4 col-xl-3  mt-5">
+      <div class="col-12 col-md-6 col-lg-4 mt-5">
         <div class="card">
           <div class="plant-card-image" style="background-image: url('<%= cl_image_path plant.photos.first.key, crop: :fill %>')"></div>
 
@@ -51,7 +51,7 @@
 
               <div class="d-flex flex-column flex-end mt-auto">
                 <p class="card-text">Category: <%= plant.category %></p>
-                <p class="card-text"><strong>EUR</strong> <%= plant.price %></p>
+                <p class="card-text"><strong>EUR</strong> <%= plant.price %> / month</p>
               </div>
 
               <%= link_to "Adopt me", plant_path(plant), class: "button button-green mt-3" %>
