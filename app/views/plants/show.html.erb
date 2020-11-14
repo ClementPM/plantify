@@ -67,7 +67,7 @@
             <%= image_tag("https://www.flaticon.com/svg/static/icons/svg/846/846066.svg", size: "30") %>
           </div>
           <div class="ml-2">
-            <p class="mb-0"><%= @plant.price %> EUR</p>
+            <p class="mb-0"><%= @plant.price %> EUR / month</p>
           </div>
         </div>
 
@@ -83,29 +83,8 @@
       </div>
 
       <div class="booking-card border border-secondary">
-        <h5 class="mb-0 mt-2">Add dates for prices</h5>
-
+        <h5 class="mb-0 my-2">Add dates for prices</h5>
           <%= render 'plants/form_booking' %>
-
-        <!-- <div class="col-auto p-0">
-          <label class=“sr-only” for="inlineFormInputGroup"></label>
-          <div class="input-group mb-4">
-            <div>Move-in</div>
-            <div class="input-group-prepend">
-              <input type="date" class="form-control" id="inlineFormInputGroup" placeholder="12/10/2017">
-            </div>
-          </div>
-
-          <div class="input-group mb-4">
-            <div>Move-out</div>
-            <div class="input-group-prepend">
-              <input type="date" class="form-control" id="inlineFormInputGroup" placeholder="12/10/2017">
-            </div>
-          </div>
-
-        </div>
-
-        <button type="button" class="btn button-green btn-sm mt-3" style="width: 100%">Calculate</button> -->
       </div>
     </div>
 

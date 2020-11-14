@@ -1,7 +1,7 @@
-<div class="new-form">
+<div class="new-form-calendar">
   <%= simple_form_for [@plant, @booking] do |f| %>
     <%= f.input :start_date, as: :date, label: "Move in", html5: true %>
     <%= f.input :end_date, as: :date, label: "Move out", html5: true %>
-    <%= f.submit "Adopt me" %>
+    <%= f.submit "Adopt me", class: "button button-green w-100" %>
   <% end %>
 </div>
