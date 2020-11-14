@@ -56,10 +56,11 @@
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: white;
-  background-color: darkgrey;
+  color: #0a8f63;
+  background-color: transparent;
 }
 
 .nav-pills .nav-link {
   border-radius: 5px;
+  color: grey;
 }

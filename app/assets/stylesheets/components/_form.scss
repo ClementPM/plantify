@@ -7,8 +7,10 @@
 }
 
 #surrounding {
-  border: 1px solid black;
+  border: 1px solid #0a8f63;
   padding: 3rem;
+  border-radius: 4px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .new-form-calendar {
