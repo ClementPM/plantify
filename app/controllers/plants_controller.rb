@@ -4,9 +4,9 @@ class PlantsController < ApplicationController
 
     @plants = @plants.where("name ILIKE ?", "%#{params[:query]}%") if params[:query]
 
-    @plants = @plants.where(category: params[:category].downcase) if params[:category]
+    @plants = @plants.where(category: params[:category]) if params[:category]
 
-    @markers =  @plants.map do |plant|
+    @markers = @plants.map do |plant|
       {
         lat: plant.latitude,
         lng: plant.longitude
