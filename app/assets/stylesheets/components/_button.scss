@@ -12,7 +12,24 @@
   border: 1px solid #0a8f63;
   &:hover {
     background-color: #197163;
+    color: white;
   }
+}
+
+.button-red {
+  color: white;
+  background-color: indianred;
+  border: 1px solid indianred;
+  &:hover {
+    background-color: red;
+    color: white;
+  }
+}
+
+.button-grey {
+  color: white;
+  background-color: darkgrey;
+  border: 1px solid darkgrey;
 }
 
 .button-ghost {
@@ -21,6 +38,28 @@
   background-color: white;
   &:hover {
     background-color: white;
-    color: black;
+    color: darkgreen;
+    border: 1px solid darkgreen;
   }
+}
+
+.button-ghost-green {
+  color: #0a8f63;
+  border: 1px solid #0a8f63;
+  background-color: white;
+}
+
+.button-ghost-red {
+  color: indianred;
+  border: 1px solid indianred;
+  background-color: white;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: white;
+  background-color: darkgrey;
+}
+
+.nav-pills .nav-link {
+  border-radius: 5px;
 }
