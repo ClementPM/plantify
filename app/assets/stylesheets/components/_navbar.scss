@@ -19,3 +19,13 @@
     margin-left: 8px;
   }
 }
+
+a.dropdown-item {
+  text-decoration: none;
+  background-color: transparent;
+  &:active {
+    background-color: #0a8f63;
+    color: white;
+    border: 1px solid #0a8f63;
+  }
+}
